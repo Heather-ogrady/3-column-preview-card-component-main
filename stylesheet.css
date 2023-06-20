@@ -1,0 +1,159 @@
+:root {
+    --orange: #E28625;
+    --teal: #006971;
+    --dark-green: #004140;
+    --white: #f2f2f2;
+
+}
+
+body {
+    background-color: var(--white);
+}
+.d-flex {
+    display: flex;
+}
+
+.card-component {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-container {
+    width: 920px;
+
+}
+
+.card-item {
+    color: var(--white);
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 48px;
+
+}
+
+.card-item img {
+    height: 40px;
+    width: 64px;
+}
+
+.card-item h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.card-item p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+/*BUTTON*/
+
+.btn {
+    background-color: var(--white);
+    border-radius: 25px;
+    height: 48px;
+    width: 146px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--white);
+    border: var(--white) solid 2px;
+}
+
+footer {
+    justify-content: center;
+    color: var(--dark-green);
+    font-family: 'Big Shoulders Display', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.attribution a {
+    color: var(--dark-green);
+   margin-left: 5px;
+    text-decoration: none;
+}
+.attribution a:hover {
+    color: var(--orange);
+}
+
+
+/*SPECIFIC STYLES*/
+
+.sedans {
+    background-color: var(--orange);
+    border-radius: 8px 0px 0 8px;
+}
+.sedans .btn {
+    color: var(--orange);
+}
+.sedans .btn:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.suvs {
+    background-color: var(--teal);
+}
+.suvs .btn {
+    color: var(--teal);
+}
+.suvs .btn:hover {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+.luxury {
+    background-color: var(--dark-green);
+    border-radius: 0 8px 8px 0;
+}
+.luxury .btn {
+    color: var(--dark-green);
+}
+.luxury .btn:hover {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+
+@media (max-width: 700px) {
+    .cards-container {
+        flex-direction: column;
+        margin-top: auto;
+    }
+    .card-items {
+        flex-direction: column;
+    }
+    .card-item p {
+        flex-wrap: nowrap;
+    }
+    .sedans {
+        border-radius: 8px 8px 0 0;
+    }
+    .luxury {
+        border-radius: 0 0 8px 8px;
+    }
+   .attribution {
+       position: fixed;
+   }
+}
