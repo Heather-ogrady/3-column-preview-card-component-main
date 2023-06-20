@@ -102,7 +102,7 @@ footer {
 
 .sedans {
     background-color: var(--orange);
-    border-radius: 8px 0px 0 8px;
+    border-radius: 8px 0 0 8px;
 }
 .sedans .btn {
     color: var(--orange);
